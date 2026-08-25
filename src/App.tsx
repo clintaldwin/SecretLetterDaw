@@ -231,8 +231,19 @@ export default function App() {
                       <motion.a
                         id="go-back-ating-universe-button-clint"
                         href="https://ating-universe.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target="_parent"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          try {
+                            if (window.top) {
+                              window.top.location.href = 'https://ating-universe.vercel.app/';
+                            } else {
+                              window.location.href = 'https://ating-universe.vercel.app/';
+                            }
+                          } catch {
+                            window.location.href = 'https://ating-universe.vercel.app/';
+                          }
+                        }}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="px-7 py-3 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f7d66f] to-[#d4af37] text-[#12110c] text-xs font-semibold tracking-wider uppercase shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.5)] transition-all flex items-center gap-2 cursor-pointer no-underline"
@@ -397,8 +408,19 @@ export default function App() {
                       <motion.a
                         id="go-back-ating-universe-button-maica"
                         href="https://ating-universe.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target="_parent"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          try {
+                            if (window.top) {
+                              window.top.location.href = 'https://ating-universe.vercel.app/';
+                            } else {
+                              window.location.href = 'https://ating-universe.vercel.app/';
+                            }
+                          } catch {
+                            window.location.href = 'https://ating-universe.vercel.app/';
+                          }
+                        }}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="px-7 py-3 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f7d66f] to-[#d4af37] text-[#12110c] text-xs font-semibold tracking-wider uppercase shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.5)] transition-all flex items-center gap-2 cursor-pointer no-underline"
