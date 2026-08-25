@@ -1,3 +1,5 @@
+export type LetterPerspective = 'clint' | 'maica';
+
 export type SceneId =
   | 'invitation'
   | 'classmates'
@@ -10,16 +12,24 @@ export type SceneId =
   | 'treasure'
   | 'prayer'
   | 'finale'
-  | 'sealed';
+  | 'sealed'
+  | 'maica-reaction'
+  | 'maica-shyness'
+  | 'maica-11months'
+  | 'maica-whatifs'
+  | 'maica-choosing'
+  | 'maica-proud'
+  | 'maica-sentro'
+  | 'maica-postscript';
 
 export interface LetterSectionData {
-  id: SceneId;
+  id: SceneId | string;
   sceneNumber: string;
   sceneTitle: string;
   paragraphs: string[];
   handwrittenNote?: string;
   uiCommentary?: string;
-  targetVolume: number;
+  targetVolume?: number;
 }
 
 export interface PhotoMemory {
