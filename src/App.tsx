@@ -227,21 +227,21 @@ export default function App() {
                         <ArrowRight className="w-4 h-4 text-[#f4a6b8]" />
                       </motion.button>
 
-                      {/* Go back to Ating Universe Button */}
+                      {/* Go back to World of Letters Button */}
                       <motion.a
-                        id="go-back-ating-universe-button-clint"
-                        href="https://ating-universe.vercel.app/"
+                        id="go-back-world-of-letters-button-clint"
+                        href="https://world-of-letters.vercel.app/"
                         target="_parent"
                         onClick={(e) => {
                           e.preventDefault();
                           try {
                             if (window.top) {
-                              window.top.location.href = 'https://ating-universe.vercel.app/';
+                              window.top.location.href = 'https://world-of-letters.vercel.app/';
                             } else {
-                              window.location.href = 'https://ating-universe.vercel.app/';
+                              window.location.href = 'https://world-of-letters.vercel.app/';
                             }
                           } catch {
-                            window.location.href = 'https://ating-universe.vercel.app/';
+                            window.location.href = 'https://world-of-letters.vercel.app/';
                           }
                         }}
                         whileHover={{ scale: 1.02 }}
@@ -249,7 +249,7 @@ export default function App() {
                         className="px-7 py-3 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f7d66f] to-[#d4af37] text-[#12110c] text-xs font-semibold tracking-wider uppercase shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.5)] transition-all flex items-center gap-2 cursor-pointer no-underline"
                       >
                         <Sparkles className="w-3.5 h-3.5 text-[#14120a]" />
-                        <span>Go back to Ating Universe</span>
+                        <span>Go back to World of Letters</span>
                         <ExternalLink className="w-3.5 h-3.5 text-[#14120a]" />
                       </motion.a>
 
@@ -404,21 +404,21 @@ export default function App() {
                         <ArrowRight className="w-4 h-4 text-[#d4af37]" />
                       </motion.button>
 
-                      {/* Go back to Ating Universe Button */}
+                      {/* Go back to World of Letters Button */}
                       <motion.a
-                        id="go-back-ating-universe-button-maica"
-                        href="https://ating-universe.vercel.app/"
+                        id="go-back-world-of-letters-button-maica"
+                        href="https://world-of-letters.vercel.app/"
                         target="_parent"
                         onClick={(e) => {
                           e.preventDefault();
                           try {
                             if (window.top) {
-                              window.top.location.href = 'https://ating-universe.vercel.app/';
+                              window.top.location.href = 'https://world-of-letters.vercel.app/';
                             } else {
-                              window.location.href = 'https://ating-universe.vercel.app/';
+                              window.location.href = 'https://world-of-letters.vercel.app/';
                             }
                           } catch {
-                            window.location.href = 'https://ating-universe.vercel.app/';
+                            window.location.href = 'https://world-of-letters.vercel.app/';
                           }
                         }}
                         whileHover={{ scale: 1.02 }}
@@ -426,7 +426,7 @@ export default function App() {
                         className="px-7 py-3 rounded-full bg-gradient-to-r from-[#d4af37] via-[#f7d66f] to-[#d4af37] text-[#12110c] text-xs font-semibold tracking-wider uppercase shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.5)] transition-all flex items-center gap-2 cursor-pointer no-underline"
                       >
                         <Sparkles className="w-3.5 h-3.5 text-[#14120a]" />
-                        <span>Go back to Ating Universe</span>
+                        <span>Go back to World of Letters</span>
                         <ExternalLink className="w-3.5 h-3.5 text-[#14120a]" />
                       </motion.a>
 
